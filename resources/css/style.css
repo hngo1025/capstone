@@ -61,6 +61,10 @@ nav span {
 	padding-left: 16px;
 }
 
+.mobile-nav {
+	display: none;
+}
+
 
 /* Cover/Body */
 
@@ -128,8 +132,15 @@ nav span {
 }
 
 @media only screen and (max-width: 640px) {
-		header span, nav {
+		header span, nav, .logo {
 			display: none;
+		}
+		
+		.mobile-nav {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 0 24px;
 		}
 		
 		.content {
@@ -150,6 +161,9 @@ nav span {
 		.button {
 			width: 100%;
 			box-sizing : border-box;
+		}
+		.column-two h3 {
+			padding-top: 16px;
 		}
 	
 	}
